@@ -5,7 +5,9 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 export HOMEBREW_NO_ANALYTICS=1
 
 # Use neovim
-# export EDITOR=nvim
+export EDITOR=nvim
+alias vim="nvim"
+alias oldvim=/usr/local/bin/vim
 
 # shortcuts for neovim
 export VIMCONFIG=~/.config/nvim
