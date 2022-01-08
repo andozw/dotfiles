@@ -13,6 +13,9 @@ alias oldvim=/usr/local/bin/vim
 export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
 
+# open neovim init.vim
+alias myvim="nvim $VIMCONFIG/init.vim"
+
 # Print the current git author when the shell loads
 if [[ -n $(which git) ]]; then
   printf "${COLOR_LIGHT_CYAN}Current git author:${COLOR_YELLOW} ${GIT_AUTHOR_NAME:-$(git config user.name)} <${GIT_AUTHOR_EMAIL:-$(git config user.email)}>\n${COLOR_NC}"
@@ -42,6 +45,7 @@ alias dv="cd ~/Development"
 alias dev="cd ~/Development"
 alias notes="cd /Users/$USER/Documents/Notes"
 alias code="cd ~/Code"
+alias dot="cd ~/Code/dotfiles"
 alias jv="cd ~/Development/java"
 alias mb="git branch -a | grep $USER"
 alias canary='git push -f origin head:canary'

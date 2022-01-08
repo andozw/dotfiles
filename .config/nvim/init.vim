@@ -58,11 +58,10 @@ endif
 
 
 " PLUGINS
-call plug#begin('$VIMCONFIG/plugged')
+call plug#begin('$VIMDATA/plugged')
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-surround'
 Plug 'rust-lang/rust.vim'
-Plug 'flazz/vim-colorschemes'
 Plug 'preservim/nerdcommenter'
 call plug#end()
 
