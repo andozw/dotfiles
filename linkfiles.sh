@@ -31,4 +31,3 @@ function maybe_link {
 #maybe_link .bash_profile
 maybe_link .inputrc
 maybe_link .vimrc
-maybe_link .config/nvim/init.vim
