@@ -14,7 +14,8 @@ export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
 
 # open neovim init.vim
-alias myvim="nvim $VIMCONFIG/init.vim"
+alias myvim="nvim $VIMCONFIG/init.lua"
+alias govim="cd $VIMCONFIG"
 
 # Print the current git author when the shell loads
 if [[ -n $(which git) ]]; then
@@ -81,6 +82,9 @@ fbb () {
 ## tell ripgrep to search hidden files
 alias rg="rg --hidden --glob '!.git'"
 
+## RUST
+alias carg="cargo clean && cargo build && cargo test && cargo doc"
+
 ## deploy diff for Java apps
 remotediff () {
   ## arg1 = app, arg2 = env 
@@ -106,7 +110,7 @@ alias gds="git diff --staged"
 alias gg="git log --decorate --oneline --graph --all"
 alias ggg="git log --decorate --oneline --graph"
 alias glno="git log --name-only"
-alias gpr="git cmp"
+alias ghpr="git cmp"
 # git log "short pretty"
 alias glsp="git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short --no-merges"
 
