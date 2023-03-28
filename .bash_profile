@@ -17,6 +17,9 @@ export VIMDATA=~/.local/share/nvim
 alias myvim="nvim $VIMCONFIG/init.lua"
 alias govim="cd $VIMCONFIG"
 
+# Set GPG_TTY variable (https://www.gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html)
+export GPG_TTY=$(tty)
+
 # Print the current git author when the shell loads
 if [[ -n $(which git) ]]; then
   printf "${COLOR_LIGHT_CYAN}Current git author:${COLOR_YELLOW} ${GIT_AUTHOR_NAME:-$(git config user.name)} <${GIT_AUTHOR_EMAIL:-$(git config user.email)}>\n${COLOR_NC}"
