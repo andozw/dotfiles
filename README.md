@@ -16,3 +16,5 @@ if [ -f ~/Code/dotfiles/.bash_profile ]; then
     . ~/Code/dotfiles/.bash_profile
 fi
 ```
+
+EOF
