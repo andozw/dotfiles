@@ -109,7 +109,7 @@ diffstat () {
 
 ## GIT
 alias gaa="git add -A "
-alias gcm="git commit -m "
+alias gcmm="git commit -m "
 alias gca="git commit --amend "
 alias gds="git diff --staged"
 alias gg="git log --decorate --oneline --graph --all"
