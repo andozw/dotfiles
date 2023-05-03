@@ -21,9 +21,10 @@ alias govim="cd $VIMCONFIG"
 export GPG_TTY=$(tty)
 
 # Print the current git author when the shell loads
-if [[ -n $(which git) ]]; then
-  printf "${COLOR_LIGHT_CYAN}Current git author:${COLOR_YELLOW} ${GIT_AUTHOR_NAME:-$(git config user.name)} <${GIT_AUTHOR_EMAIL:-$(git config user.email)}>\n${COLOR_NC}"
-fi
+# No longer using with switch to zsh
+#if [[ -n $(which git) ]]; then
+  #printf "${COLOR_LIGHT_CYAN}Current git author:${COLOR_YELLOW} ${GIT_AUTHOR_NAME:-$(git config user.name)} <${GIT_AUTHOR_EMAIL:-$(git config user.email)}>\n${COLOR_NC}"
+#fi
 
 ### 
 # Shortcuts to dot files
@@ -35,10 +36,11 @@ alias vimrc="vim ~/.vimrc"
 ####
 # Set up prompt
 ####
-git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \[\033[0;36m\]\h \w\[\033[0;32m\]$(__git_ps1)\n\[\033[0;32m\]└─\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\] ▶\[\033[0m\] '
+# No longer using with switch to zsh
+#git_branch() {
+  #git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+#}
+#PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \[\033[0;36m\]\h \w\[\033[0;32m\]$(__git_ps1)\n\[\033[0;32m\]└─\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\] ▶\[\033[0m\] '
 
 # vim: filetype=sh
 export GOROOT=/usr/local/opt/go/libexec
@@ -68,7 +70,7 @@ bb () {
 }
 
 ## Git store staged file
-grs () {
+grsf () {
   git restore --staged $1
   git restore $1
 }
