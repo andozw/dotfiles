@@ -91,6 +91,10 @@ alias rg="rg --hidden --glob '!.git'"
 ## RUST
 alias carg="cargo clean && cargo build && cargo test && cargo doc"
 
+## Python 2 pyenv alias
+alias python="$(pyenv which python)"
+alias pip="$(pyenv which pip)"
+
 ## deploy diff for Java apps
 remotediff () {
   ## arg1 = app, arg2 = env 
