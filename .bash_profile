@@ -30,6 +30,7 @@ export GPG_TTY=$(tty)
 # Shortcuts to dot files
 ###
 alias bp="vim ~/.bash_profile"
+alias ghbp="vim ~/Code/dotfiles/.bash_profile"
 alias sbp="source ~/.bash_profile"
 alias vimrc="vim ~/.vimrc"
 
