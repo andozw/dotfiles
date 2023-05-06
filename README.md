@@ -12,7 +12,7 @@ dot dot dot
 ## Source bash_profile, add to ~/.zshrc
 ```
 # Use bash_profile repo aliases
-if [ -f ~/Code/dotfiles/.bash_profile ]; then 
+if [ -f ~/Code/dotfiles/.bash_profile ]; then
     . ~/Code/dotfiles/.bash_profile
 fi
 ```
