@@ -32,7 +32,9 @@ export GPG_TTY=$(tty)
 alias bp="vim ~/.bash_profile"
 alias ghbp="vim ~/Code/dotfiles/.bash_profile"
 alias sbp="source ~/.bash_profile"
-alias vimrc="vim ~/.vimrc"
+
+# don't use vimrc with neovim
+#alias vimrc="vim ~/.vimrc"
 
 ####
 # Set up prompt
