@@ -2,6 +2,7 @@
 dot dot dot
 
 ## Install
+* Install oh my zsh
 * `chmod u+x linkfiles.sh`
 * `./linkfiles.sh`
 * Install [vim-plug](https://github.com/junegunn/vim-plug)
