@@ -1,7 +1,11 @@
+echo "[Running dotfiles zshrc]"
+
 #######################################################
 # load Square specific zshrc; please don't change this bit.
 #######################################################
-source ~/Development/config_files/square/zshrc
+if [[ -f "$SQUARE_HOME/config_files/square/zshrc" ]]; then
+  source ~/Development/config_files/square/zshrc
+fi
 #######################################################
 
 ###########################################
@@ -14,7 +18,9 @@ source ~/Development/config_files/square/zshrc
 # fi
 
 # load the aliases in config_files files (optional)
-source ~/Development/config_files/square/aliases
+if [[ -f "$SQUARE_HOME/config_files/square/zshrc" ]]; then
+  source ~/Development/config_files/square/aliases
+fi
 
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 [[ -f "$HOME/.localaliases" ]] && source "$HOME/.localaliases"
@@ -121,12 +127,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Use andozw's bash_profile repo aliases
-if [ -f ~/Code/dotfiles/.bash_profile ]; then 
-    . ~/Code/dotfiles/.bash_profile
+# Use andozw's aliases
+if [ -f ~/Code/dotfiles/.my_bash_aliases ]; then 
+    . ~/Code/dotfiles/.my_bash_aliases
 fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 

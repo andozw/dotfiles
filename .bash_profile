@@ -1,4 +1,4 @@
-echo "BASH PROFILE"
+echo "[Running dotfiles .bash_profile]"
 
 ##############################################################
 # load Square specific bash_profile

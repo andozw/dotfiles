@@ -33,4 +33,4 @@ maybe_link .inputrc
 # maybe_link .vimrc
 # maybe_link .bash_profile
 maybe_link .zshrc
-maybe_link .my_bash_aliases
+# maybe_link .my_bash_aliases

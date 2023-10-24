@@ -1,3 +1,5 @@
+echo "[Running .my_bash_aliases"]
+
 # Disable message about zsh being default shell
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
@@ -94,8 +96,8 @@ alias rg="rg --hidden --glob '!.git'"
 alias carg="cargo clean && cargo build && cargo test && cargo doc"
 
 ## Python 2 pyenv alias
-alias python="$(pyenv which python)"
-alias pip="$(pyenv which pip)"
+# alias python="$(pyenv which python)"
+# alias pip="$(pyenv which pip)"
 
 ## deploy diff for Java apps
 remotediff () {
