@@ -66,6 +66,7 @@ alias test-conversion='cd ~/Development/java && pants test metrics/s-c-signalfx:
 alias percent='~/code/percent/percent'
 
 alias td="~/Code/dotfiles/today.sh"
+alias yest="~/Code/dotfiles/yesterday.sh"
 
 ## Run compileKotlin gradle task
 alias gck="./gradlew compileKotlin"
