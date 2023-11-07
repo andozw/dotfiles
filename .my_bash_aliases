@@ -65,6 +65,8 @@ alias runBitgo='node ./bin/bitgo-express --disableproxy'
 alias test-conversion='cd ~/Development/java && pants test metrics/s-c-signalfx::'
 alias percent='~/code/percent/percent'
 
+alias td="~/Code/dotfiles/today.sh"
+
 ## Run compileKotlin gradle task
 alias gck="./gradlew compileKotlin"
 
